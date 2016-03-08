@@ -20,8 +20,9 @@ import mqreceive
 
 setup(
     name = "mqreceive",
+    url = 'https://github.com/buben19/mqreceive',
     version = mqreceive.__version__,
-    packages = find_packages(),
+    packages = find_packages(exclude = ['doc']),
     install_requires = ['paho-mqtt>=1.1'],
     author = mqreceive.__author__,
     author_email = mqreceive.__email__,
