@@ -16,15 +16,19 @@
 
 from setuptools import setup, find_packages
 
-from mqreceive import meta
+import mqreceive
 
 setup(
     name = "mqreceive",
-    version = meta.__version__,
+    version = mqreceive.__version__,
     packages = find_packages(),
     install_requires = ['paho-mqtt>=1.1'],
-    author = meta.__author__,
-    author_email = meta.__email__,
+    author = mqreceive.__author__,
+    author_email = mqreceive.__email__,
     description = "MQTT receive wrapper library",
-    license = "GPL",
+    license = "GPLv3",
+    classifiers = [
+        'Intended Audience :: Developers',
+        'Programming Language :: Python :: 3.4',
+    ]
 )
