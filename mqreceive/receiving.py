@@ -177,7 +177,8 @@ class BrokerReceiver(BaseBrokerReceiver):
         @param userdata
         @param msg
         """
-        self.dataHandler.onMessage(self.broker, msg.topic, msg.payload)
+        dataIdentifier = DataIdentifier(self.broker, msg.topic)
+        self.dataHandler.onNewData(dataIdentifier, msg.payload)
 
     def onSubscribe(self, client, userdata, mid, granted_qos):
         """!
