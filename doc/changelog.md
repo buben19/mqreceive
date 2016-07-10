@@ -14,4 +14,8 @@
 
 ## v0.1.1
 
- - BrokerReceiver onMessage call onNewData() method of the dataHandler object
+ - BrokerReceiver onMessage call onNewData() method of the dataHandler object.
+
+## v0.1.2
+
+ - Fixed python package.
