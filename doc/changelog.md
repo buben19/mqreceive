@@ -11,3 +11,7 @@
    - Implemented `BrokerThreadManager` class for receiving MQTT updates from multiple brokers.
    - Implemented `BrokerReceiver` class for simple receiving data from single MQTT broker.
    - Implemented meaningful MQTT client IDs.
+
+## v0.1.1
+
+ - BrokerReceiver onMessage call onNewData() method of the dataHandler object
